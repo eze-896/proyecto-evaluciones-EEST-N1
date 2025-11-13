@@ -168,26 +168,51 @@ const PantallaDashboard: React.FC = () => {
         </View>
 
         {/* Sección: Acciones Rápidas */}
-        <View style={estilos.seccion}>
-          <Text style={estilos.tituloSeccion}>Acciones Rápidas</Text>
-          <View style={estilos.contenedorAcciones}>
-            <TouchableOpacity 
-              style={estilos.botonAccion}
-              onPress={() => router.push('/PantallaCargarProyecto')}
-            >
-              <Ionicons name="add-circle" size={32} color="#4f46e5" />
-              <Text style={estilos.textoBotonAccion}>Cargar Proyecto</Text>
-            </TouchableOpacity>
-            
-            <TouchableOpacity 
-              style={estilos.botonAccion}
-              onPress={() => router.push('/PantallaCargarEvaluacion')}
-            >
-              <Ionicons name="document-text" size={32} color="#059669" />
-              <Text style={estilos.textoBotonAccion}>Cargar Evaluación</Text>
-            </TouchableOpacity>
-          </View>
-        </View>
+<View style={estilos.seccion}>
+  <Text style={estilos.tituloSeccion}>Acciones Rápidas</Text>
+
+  {/* Fila 1: Cargar Proyecto / Cargar Evaluación */}
+  <View style={estilos.contenedorAcciones}>
+    <TouchableOpacity 
+      style={estilos.botonAccion}
+      onPress={() => router.push('/PantallaCargarProyecto')}
+    >
+      <Ionicons name="add-circle" size={32} color="#4f46e5" />
+      <Text style={estilos.textoBotonAccion}>Cargar Proyecto</Text>
+    </TouchableOpacity>
+    
+    <TouchableOpacity 
+      style={estilos.botonAccion}
+      onPress={() => router.push('/PantallaCargarEvaluacion')}
+    >
+      <Ionicons name="document-text" size={32} color="#059669" />
+      <Text style={estilos.textoBotonAccion}>Cargar Evaluación</Text>
+    </TouchableOpacity>
+  </View>
+
+  {/* un pequeño espacio entre filas */}
+  <View style={{ height: 12 }} />
+
+  {/* Fila 2: Ver Ranking / Historial */}
+  <View style={estilos.contenedorAcciones}>
+    <TouchableOpacity 
+      style={estilos.botonAccion}
+      onPress={() => router.push('/PantallaRanking')}
+    >
+      <Ionicons name="trophy" size={32} color="#f59e0b" />
+      <Text style={estilos.textoBotonAccion}>Ver Ranking</Text>
+    </TouchableOpacity>
+
+    <TouchableOpacity 
+      style={estilos.botonAccion}
+      onPress={() => router.push('/PantallaHistorial')}
+    >
+      <Ionicons name="time" size={32} color="#3b82f6" />
+      <Text style={estilos.textoBotonAccion}>Historial</Text>
+    </TouchableOpacity>
+  </View>
+</View>
+
 
         {/* Sección: Proyectos por Especialidad */}
         <View style={estilos.seccion}>
