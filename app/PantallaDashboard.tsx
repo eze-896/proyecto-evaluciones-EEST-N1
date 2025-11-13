@@ -37,7 +37,7 @@ const PantallaDashboard: React.FC = () => {
     {
       id: 3,
       nombre: 'Robot Seguidor de Línea',
-      especialidad: 'Mecatrónica',
+      especialidad: 'Electromecanica',
       promedio: 8.5,
       grupo: '6° C',
       profesor: 'Roberto Sánchez',
@@ -61,7 +61,7 @@ const PantallaDashboard: React.FC = () => {
     },
     {
       id: 3,
-      nombre: 'Mecatrónica',
+      nombre: 'Electromecanica',
       cantidadProyectos: 6,
       color: '#dc2626',
       icono: 'construct' as const,
@@ -93,7 +93,7 @@ const PantallaDashboard: React.FC = () => {
     {
       id: 3,
       nombre: 'Brazo Robótico Educativo',
-      especialidad: 'Mecatrónica',
+      especialidad: 'ElectroMecanica',
       fecha: '2024-01-13',
       estado: 'Evaluado',
     },
