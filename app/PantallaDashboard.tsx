@@ -37,14 +37,14 @@ const PantallaDashboard: React.FC = () => {
     {
       id: 3,
       nombre: 'Robot Seguidor de Línea',
-      especialidad: 'Electromecanica',
+      especialidad: 'Electromecánica',
       promedio: 8.5,
       grupo: '6° C',
       profesor: 'Roberto Sánchez',
     },
   ];
 
-  const especialidades = [
+    const especialidades = [
     {
       id: 1,
       nombre: 'Electrónica',
@@ -61,17 +61,31 @@ const PantallaDashboard: React.FC = () => {
     },
     {
       id: 3,
-      nombre: 'Electromecanica',
+      nombre: 'Electromecánica',
       cantidadProyectos: 6,
       color: '#dc2626',
       icono: 'construct' as const,
     },
     {
       id: 4,
-      nombre: 'Electricidad',
-      cantidadProyectos: 9,
-      color: '#d97706',
-      icono: 'flash' as const,
+      nombre: 'Química',
+      cantidadProyectos: 7,
+      color: '#0ea5e9',
+      icono: 'flask' as const,
+    },
+    {
+      id: 5,
+      nombre: 'Ciclo Básico',
+      cantidadProyectos: 10,
+      color: '#f59e0b',
+      icono: 'school' as const,
+    },
+    {
+      id: 6,
+      nombre: 'EPS',
+      cantidadProyectos: 5,
+      color: '#8b5cf6',
+      icono: 'people' as const,
     },
   ];
 
@@ -93,7 +107,7 @@ const PantallaDashboard: React.FC = () => {
     {
       id: 3,
       nombre: 'Brazo Robótico Educativo',
-      especialidad: 'ElectroMecanica',
+      especialidad: 'Electromecánica',
       fecha: '2024-01-13',
       estado: 'Evaluado',
     },
